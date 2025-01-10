@@ -80,15 +80,19 @@
         </button>
       </div>
     </section>
-    
+
     <section>
       <div class="container my-5">
         <div class="row align-items-center">
           <!-- Texto -->
           <div class="col-md-6">
             <h2 class="mb-3">Características principales</h2>
-            <p class="lead">Los grandes felinos comparten diversas características que los diferencian de otros mamíferos. Son animales cárnivoros con cuerpos musculosos, garras afiladas y dientes especializados para desgarrar carne. </p>
-            <a href="#" class="btn btn-primary">Leer más</a>
+            <p class="lead">Los grandes felinos comparten diversas características que los diferencian de otros
+              mamíferos. Son animales cárnivoros con cuerpos musculosos, garras afiladas y dientes especializados para
+              desgarrar carne. </p>
+            <a tabindex="0" class="btn btn-lg btn-primary" role="button" data-bs-toggle="popover"
+              data-bs-trigger="focus" data-bs-title="Dismissible popover"
+              data-bs-content="And here's some amazing content. It's very engaging. Right?">Leer más</a>
           </div>
           <!-- Imagen -->
           <div class="col-md-6">
@@ -108,7 +112,8 @@
           <!-- Texto -->
           <div class="col-md-6">
             <h2 class="mb-3">Introducción</h2>
-            <p class="lead">Los grandes felinos son algunos de los depredadores más majestuosos y poderosos del reino animal. Este término se refiere principalmente a cinco especies dentro del género Panthera: </p>
+            <p class="lead">Los grandes felinos son algunos de los depredadores más majestuosos y poderosos del reino
+              animal. Este término se refiere principalmente a cinco especies dentro del género Panthera: </p>
             <ul class="lead">
               <li>El león (Panthera leo)</li>
               <li>El tigre (Panthera tigris)</li>
@@ -116,14 +121,19 @@
               <li>El leopardo (Panthera pardus)</li>
               <li>el leopardo de las nieves (Panthera uncia)</li>
             </ul>
-            <p class="lead">Aunque también se consideran grandes felinos a otros como el guepardo (Acinonyx jubatus) y el puma (Puma concolor), estos no pertenecen al género Panthera</p>
-            <a href="#" class="btn btn-primary">Leer más</a>
+            <p class="lead">Aunque también se consideran grandes felinos a otros como el guepardo (Acinonyx jubatus) y
+              el puma (Puma concolor), estos no pertenecen al género Panthera</p>
+            <a tabindex="0" class="btn btn-lg btn-primary" role="button" data-bs-toggle="popover"
+              data-bs-trigger="focus" data-bs-title="Dismissible popover"
+              data-bs-content="And here's some amazing content. It's very engaging. Right?">Leer más</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container my-5">
+    <section class="bg-dark py-5">
+      <div class="container my-5">
+        <h2 class="text-center my-5 fw-bold text-light">SIGUE APRENDIENDO</h2>
         <div class="row g-4 d-flex justify-content-around">
           <div class="card" style="width: 18rem; padding: 0 !important;">
             <img src="img/himalaya.jpg" class="card-img-top" alt="...">
@@ -145,12 +155,14 @@
             <img src="img/cazadores.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Estado de conservación</h5>
-              <p class="card-text">El problema de las cazas furtivas.</p>
+              <p class="card-text">El problema de las cazas furtivas. Deberías acabar?</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
+      </div>
     </section>
+
 
     <div class="container">
       <footer class="py-5">
@@ -221,6 +233,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script>
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+      trigger: 'focus'
+    })
+  </script>
 </body>
 
 </html>
