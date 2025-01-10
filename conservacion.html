@@ -6,40 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .video-banner {
-          position: relative;
-          height: 100vh; /* Altura completa de la pantalla */
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          text-align: center;
+            position: relative;
+            height: 70vh;
+            /* Altura completa de la pantalla */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
         }
-    
+
         .video-banner video {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          min-width: 100%;
-          min-height: 100%;
-          z-index: -1; /* Coloca el video detrás del contenido */
-          object-fit: cover; /* Asegura que el video cubra todo el área del banner */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            /* Coloca el video detrás del contenido */
+            object-fit: cover;
+            /* Asegura que el video cubra todo el área del banner */
         }
-    
+
         .video-banner h1 {
-          font-size: 4rem;
-          font-weight: bold;
+            font-size: 4rem;
+            font-weight: bold;
         }
-    
+
         .video-banner p {
-          font-size: 1.5rem;
-          margin-top: 10px;
+            font-size: 1.5rem;
+            margin-top: 10px;
         }
-      </style>
+    </style>
 </head>
 
 <body>
@@ -75,37 +78,119 @@
         <section>
             <div class="video-banner">
                 <video autoplay muted loop>
-                  <source src="video/cazadores.mp4" type="video/mp4"> <!-- Reemplaza con la ruta de tu video -->
-                  Tu navegador no soporta la reproducción de videos.
+                    <source src="video/cazadores.mp4" type="video/mp4"> <!-- Reemplaza con la ruta de tu video -->
+                    Tu navegador no soporta la reproducción de videos.
                 </video>
                 <div class="container">
-                  <h1>Estado de conservación</h1>
-                  <p>Son estos un problema real?</p>
+                    <h1>Estado de conservación</h1>
+                    <p>Son estos un problema real?</p>
                 </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <!-- Imagen izquierda -->
+                    <div class="col-md-3 text-center">
+                        <img src="img/Cazadores1.jpg" alt="Imagen izquierda" class="img-fluid rounded">
+                    </div>
+
+                    <!-- Texto en el medio -->
+                    <div class="col-md-6 text-center">
+                        <h2 class="fw-bolder text-uppercase">Caza y factores</h2>
+                        <p class="lead">Muchas especies de grandes felinos enfrentan amenazas graves debido a la caza
+                            furtiva, la pérdida de hábitat y el cambio climático. El tigre, por ejemplo, está catalogado
+                            como en peligro de extinción, con menos de 4,000 individuos en estado salvaje. La caza
+                            furtiva de tigres y otros felinos por su piel, huesos y otros productos sigue siendo una
+                            actividad lucrativa en el mercado negro, impulsada por la demanda de medicina tradicional y
+                            bienes de lujo.</p>
+                        <p class="lead">El leopardo de las nieves también enfrenta graves amenazas debido a la caza
+                            ilegal y la fragmentación de su hábitat causada por el cambio climático y el desarrollo
+                            humano. La disminución de sus presas naturales, como cabras y ovejas salvajes, obliga a
+                            estos felinos a acercarse a asentamientos humanos, lo que aumenta el riesgo de conflictos
+                            con las comunidades locales.</p>
+                        <p class="lead">El jaguar, en América Latina, está amenazado por la deforestación masiva para la
+                            agricultura y la ganadería. La pérdida de los bosques tropicales reduce drásticamente sus
+                            hábitats, dejando a las poblaciones aisladas y más vulnerables a la caza furtiva y la
+                            endogamia.</p>
+                    </div>
+
+                    <!-- Imagen derecha -->
+                    <div class="col-md-3 text-center">
+                        <img src="img/Cazadores2.jpg" alt="Imagen derecha" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <h1>IMAGENES DE CAZADORES</h1>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/asesinos (1).jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/asesinos (2).jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/asesinos (3).jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
         </section>
 
         <section>
             <div class="container my-5">
                 <div class="row align-items-center">
-                  <!-- Imagen izquierda -->
-                  <div class="col-md-3 text-center">
-                    <img src="https://via.placeholder.com/200x300" alt="Imagen izquierda" class="img-fluid rounded">
-                  </div>
-            
-                  <!-- Texto en el medio -->
-                  <div class="col-md-6 text-center">
-                    <h2>Título Central</h2>
-                    <p class="lead">Este es un texto descriptivo que se muestra en el centro. Puedes usarlo para describir el contenido o proporcionar información importante.</p>
-                  </div>
-            
-                  <!-- Imagen derecha -->
-                  <div class="col-md-3 text-center">
-                    <img src="https://via.placeholder.com/200x300" alt="Imagen derecha" class="img-fluid rounded">
-                  </div>
+                    <!-- Imagen -->
+                    <div class="col-md-6">
+                        <img src="img/LeonPosa.jpg" alt="Imagen de ejemplo" class="img-fluid rounded">
+                    </div>
+                    <!-- Texto -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3">Para combatir estas amenazas</h2>
+                        <p class="lead">Diversas iniciativas de conservación han surgido
+                            en todo el mundo. Proyectos como el Programa de Recuperación del Tigre en la India han
+                            logrado aumentar las poblaciones en ciertas áreas protegidas mediante la reintroducción de
+                            individuos y la implementación de estrictas medidas contra la caza furtiva. Asimismo, las
+                            reservas naturales y los corredores biológicos se han convertido en herramientas esenciales
+                            para conectar los hábitats fragmentados y permitir el libre movimiento de los felinos.</p>
+                        <p class="lead">Organizaciones internacionales como la World Wildlife Fund (WWF), Panthera y
+                            Wildlife Conservation Society (WCS) trabajan junto a gobiernos y comunidades locales para
+                            educar sobre la importancia de la conservación y ofrecer soluciones sostenibles que
+                            beneficien tanto a los grandes felinos como a las personas.</p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
+
+        <section>
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <!-- Texto -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3">En última instancia</h2>
+                        <p class="lead">La conservación de los grandes felinos requiere un esfuerzo global. La cooperación internacional, el fortalecimiento de las leyes contra el tráfico de especies y la participación activa de las comunidades locales son esenciales para garantizar que estas icónicas especies sigan existiendo en las próximas generaciones.</p>
+                    </div>
+                    <!-- Imagen -->
+                    <div class="col-md-6">
+                        <img src="img/grupoDeFelinos.jpg" alt="Imagen de ejemplo" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer class=" bg-dark ">
@@ -175,5 +260,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-</body >
-</html >
+</body>
+
+</html>
