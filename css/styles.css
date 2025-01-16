@@ -1,0 +1,245 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+a{
+    text-decoration: none !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.card-body{
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center !important;
+}
+
+.card-body a{
+    background-color: rgb(15, 15, 15);
+    border-color: black;
+}
+
+.card-body a:hover{
+    background-color: rgb(9, 0, 51);
+    border-color: black;
+}
+.btn-primary{
+    background-color: rgb(15, 15, 15) !important;
+    border-color: black !important;
+}
+
+.btn-primary:hover{
+    background-color: rgb(9, 0, 51) !important;
+    border-color: black !important;
+}
+.navbar-toggler{
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgb(185, 185, 185) !important;
+}
+.video-banner {
+    position: relative;
+    height: 70vh;
+    /* Altura completa de la pantalla */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.video-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.video-banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.video-banner p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.banner {
+    position: relative;
+    background-image: url('../img/leopardoNieves.jpg');
+    background-size: cover;
+    background-position: 0px -550px;
+    color: white;
+    padding: 200px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+}
+
+.bannerLeon {
+    position: relative;
+    background-image: url('../img/leon.jpg');
+    background-size: cover;
+    background-position: 0px -250px;
+    color: white;
+    padding: 200px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bannerLeon::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.bannerTigre {
+    position: relative;
+    background-image: url('../img/tigre.jpg');
+    background-size: cover;
+    background-position: 0px -200px;
+    color: white;
+    padding: 200px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bannerTigre::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.bannerAnim {
+    position: relative;
+    background-image: url('../img/grupoDeFelinos.jpg');
+    background-size: cover;
+    background-position: 0px -200px;
+    color: white;
+    padding: 200px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bannerAnim::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+.menu-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.menu-option {
+    margin: 15px;
+    padding: 15px 25px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-option.leon {
+    background-color: #f5c542;
+    color: white;
+}
+
+.menu-option.tigre {
+    background-color: #f76c5e;
+    color: white;
+}
+
+.menu-option.jaguar {
+    background-color: #5dba68;
+    color: white;
+}
+
+.menu-option:hover {
+    border-color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
