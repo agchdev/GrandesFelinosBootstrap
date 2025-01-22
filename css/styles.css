@@ -243,3 +243,9 @@ table {
     transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
+img{
+    transition: all .4s ease;
+}
+img:hover{
+    scale: 1.05;
+}
